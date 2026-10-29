@@ -4,6 +4,9 @@
  */
 package ejercicio04;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author SALASC
@@ -14,7 +17,40 @@ public class Ejercicio04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+            Scanner entrada = new Scanner(System.in);
+            entrada.useLocale(Locale.US);
+            
+            String cliente;
+            double CPU;
+            double pantalla;
+            double teclado;
+            double raton;
+            double costoBaseTotal;
+            double costoAdicional;
+            double costoTotal;
+            
+            System.out.println("Ingrese su nombre: ");
+            cliente = entrada.nextLine();
+            System.out.println("Ingrese el costo del CPU: ");
+            CPU = entrada.nextDouble();
+            System.out.println("Ingrese el costo de la Pantalla: ");
+            pantalla = entrada.nextDouble();
+            System.out.println("Ingrese el costo del Teclado: ");
+            teclado = entrada.nextDouble();
+            System.out.println("Ingrese el costo del Raton: ");
+            raton = entrada.nextDouble();
+            
+            costoBaseTotal = CPU + pantalla + teclado + raton;
+            
+            costoAdicional = costoBaseTotal * 0.15;
+            
+            costoTotal = costoBaseTotal + costoAdicional;
+            
+            System.out.printf("Reporte: \nNombres del cliente: %s\n"
+                    + "Valores iniciales:\nCPU: %.2f"
+            
+        
     }
     
 }
