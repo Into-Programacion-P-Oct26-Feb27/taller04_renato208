@@ -51,8 +51,13 @@ public class Ejercicio01 {
         gastoTotal = gasto1 + gasto2 + gasto3;
         
         
-        System.out.printf("1. %s: $%2f\n2. %s: $%2f\n3. %s: $%2f\n "
-                + "Gasto Mensual: $%2f\n",
+        System.out.printf("CONTROL DE GASTOS DE PROYECTOS\nProyectos: \n"
+                + "------------------------\n"
+                + "1. %s: $%.2f\n"
+                + "2. %s: $%.2f\n"
+                + "3. %s: $%.2f\n"
+                + "------------------------\n"
+                + "GASTO MENSUAL TOTAL: $%.2f\n",
                 proyecto1,
                 gasto1,
                 proyecto2,
